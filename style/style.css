@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('/images/bg-intro-desktop.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 480px){
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
+}
+
+.container{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.container__left {
+  margin-top: 150px;
+  margin-right: 50px;
+}
+
+
+.container__left .container__left__header{
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.container__left .container__left__text {
+  color: white;
+  width: 400px;
+  line-height: 25px;
+}
+
+
+.container__right {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* justify-content: space-between; */
+}
+
+.container__right .right__nav{
+
+    background: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.4);
+    color: hsl(246, 25%, 77%);
+    margin-bottom: 20px;
+}
+ span {
+     font-weight: 500;
+     color: white;
+ }
+
+ .right__form {
+     display: flex;
+     flex-direction: column;
+     background: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.4);
+ }
+
+ .right__form form {
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+
+ }
+ input{
+     height: 30px;
+     margin: 8px;
+     padding: 8px;
+     outline-width: none;
+     border: 1px solid rgba(0,0,0,0.5);
+     border-radius: 10px;
+ }
+ input:focus {
+     border-radius: 10px;
+ }
+
+ button {
+     height: 40px;
+     border-radius: 10px;
+     outline: none;
+     border: none;
+     color: white;
+     background: hsl(154, 59%, 51%);
+     font-weight: 700;
+ }
+
+ .right__form  {
+     text-align: center;
+     font-size: 12px;
+ }
+
+ .right__form p {
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+}
+.term {
+    color:hsl(0, 100%, 74%);
+
+}
